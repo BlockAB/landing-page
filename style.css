@@ -23,16 +23,20 @@
 
 .topleft{
   width: 50%;
-  height: 50vh;
+ 
 }
 
 .topright{
   width: 50%;
-  height: 50vh;
+  
 }
 
 .section1{
+   min-height: 100vh;
+}
 
+.section1 h1{
+  font-size: 1.3rem;
 }
 
 .logo-title{
@@ -42,4 +46,34 @@
 .logo{
   width: 50px;
   
+}
+
+.eth-logo{
+  width: 125px;
+}
+
+.topright .topimg-size{
+  width: 466;
+}
+
+.section2{
+  padding-left:63px;
+  padding-right: 63;
+}
+
+.section2 h1{
+  font-size: 2rem;
+}
+
+.box{
+  margin: 12px 22px;
+  min-width: 33vw;
+  border: 2px solid rgb(177, 171, 171);
+}
+
+.box ul{
+  list-style-type: none;
+}
+.box ul li{
+  margin: 12px 2px;
 }
