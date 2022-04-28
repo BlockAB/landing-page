@@ -8,23 +8,23 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="utils.css">
 </head>
-<body class=" overflow-x-hidden">
+<body>
     <div class="container mx-auto text-center">
       
        <header>
          <nav class="flex justify-between">
-           <div class="font-bold flex items-center text-grey logo-title">Block<span class="text-green flex items-center"> AB
+           <div class="font-bold text-green flex items-center logo-title">Block<span class="flex items-center text-grey logo-span"> AB
           <span class="flex logo">
-             <img class="logo" src="/images/logo.gif" alt="logo"></span>
+             <img class="logo" src="/images/head-image.png" alt="logo"></span>
              
            </div>
 
          <ul class="navbar flex items-center">
-           <li>Home</li>
-           <li>About</li>
-           <li>Services</li>
-           <li>Contact Us</li>
-           <li><button class="btn">Hire Me</button></li>
+           <li><a class="nav-links"href="#">Home</a></li>
+           <li><a class="nav-links"href="#">About</a></li>
+           <li><a class="nav-links"href="#">Services</a></li>
+           <li><a class="nav-links"href="#">Contact Us</a></li>
+           <li><button class="btn"><a class="btn-link" href="#">Hire Me</button></a></li>
         </ul>
         
        </nav>
@@ -37,11 +37,17 @@
         <div class="topleft flex flex-col justify-center px-2">
 
 <div class="text-center">
-  <img class="eth-logo" src="/images/head-image.png" alt="header-image">
+  <img class="eth-logo" src="/images/logo.gif" alt="header-image">
 </div>
           
-          <h1 class="m-1 text-center">The best Blockchain development services available in very cheap prices and high quality! only on BlockAB</h1>
-          <p clatext-centerss="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita beatae, obcaecati sequi itaque magnam, illo saepe officiis repellendus assumenda praesentium voluptas distinctio laborum corporis, veritatis ab. Amet, perspiciatis placeat. Ratione maiores est excepturi magni velit consequatur rerum recusandae!</p>
+          <h1 class="m-1 text-center">The best Blockchain development services available in very cheap prices and high quality! Only on <span class="text-green logo-title">Block</span><span class="text-grey logo-span">AB</span></h1>
+          <p clatext-centerss="text-center">We offer Smart Contract and  Dapp development services in reasonable prices, Client satisfaction is our first priority! Currently we are running a deal with <span class="text-green logo-title">30% off!</span></p>
+
+          <p class="deal text-center">The deal ends in <span id="timer"></span></p>
+          <div class="buttons">
+              <button class="btn">Hire now</button>
+              <button class="btn">Contact Us</button>
+          </div>
         </div>
         <div class="topright flex justify-center">
           
@@ -55,33 +61,126 @@
 
       <section class="section2">
         <h1 class="text-center m-2">Pricing</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea commodi est ipsam beatae. Asperiores officiis mollitia perferendis labore commodi, harum ipsum. Eum omnis dolor cupiditate quibusdam earum nobis quis reiciendis minima ea obcaecati dolores tempora aliquid laudantium dolorum pariatur, corporis laboriosam beatae.</p>
+        <p class="m-2">Very reasonable prices with high quality product, If you need custom package or custom package Contact US
 
-      <div class="boxes flex">
+      <div class="boxes flex justify-center">
         <div class="box">
-          <h2>Basic</h2>
+          <h2 class="pkg-name text-green wrap-word">Newb<span class="text-grey wrap-word">ie</span></h2>
           <ul>
-            <li>$50</li>
-            <li>BEP20 Token</li>
-            <li>Model: Safemoon v1</li>
-            <li>Delivery 3 Days</li>
-            <li><button class="btn">Buy Now</button></li>
+            <li><span class="discount highlighted">$50</span><span class="highlighted flex justify-center">$30</span></li>
+            <li class="wrap-word">Reflection Token</li>
+            <li class="wrap-word">Includes: Safemoon v1 Token Fork, Dex Listing Guide</li>
+            <li class="wrap-word">Delivery: 3 Days</li>
+            <li> <button class="btn"><a class="btn-link" href="#">Buy Now</button></a></li>
           </ul>
         </div>
 
-        <div class="box"></div>
-        <div class="box"></div>
-      </div>
+        <div class="box">
+          <h2 class="pkg-name text-green wrap-word">Standa<span class="text-grey wrap-word">rd</span></h2>
+          <ul>
+            <li><span class="discount highlighted">$150</span><span class="highlighted flex justify-center">$100</span></li>
+            <li class="wrap-word">Reward BEP20 Token</li>
+            <li class="wrap-word">Includes: BabyCake Token Fork, Dex Listing Guide
+            </li>
+            <li class="wrap-word">Delivery: 5 Days</li>
+            <li> <button class="btn"><a class="btn-link" href="#">Buy Now</button></a></li>
+          </ul>
+        </div>
 
+          <div class="box">
+            <h2 class="pkg-name text-green wrap-word">Profession<span class="text-grey wrap-word">al</span></h2>
+            <ul>
+              <li><span class="discount highlighted">$300</span><span class="highlighted flex justify-center">$200</span></li>
+              <li class="wrap-word">Auto Rebase, Highest APY Token</li>
+              <li class="wrap-word">Includes: Safuu Fork, Presale Listing Guide, Dex Listing Guide</li>
+              <li class="wrap-word">Delivery: 7 Days</li>
+              <li> <button class="btn"><a class="btn-link" href="#">Buy Now</button></a></li>
+            </ul>
+          </div>
 
       </section>
       <hr>
-      <section></section>
+      <section class="section3">
+        <h1 class="text-center m-2 logo-span text-green">Compa<span class="logo-title text-grey">re</span> Pla<span class="text-grey logo-title">ns</span></h1>
+        <div class="container plan-table">
+            <table class="table text-center">
+              <thead>
+                <tr>
+                  <th class="text-green logo-span">Features</th><th class="text-green logo-span">Basic</th>
+                  <th class="text-green logo-span">Standard</th>
+                  <th class="text-green logo-span">Professional</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row" class="text-start">Demanding</th>
+                  <td>&#10003</svg></td>
+                  <td>&#10003</svg></td>
+                  <td>&#10003</svg></td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-start">Secure</th>
+                  <td>&#10003</td>
+                  <td>&#10003</svg></td>
+                  <td>&#10003</svg></td>
+                </tr>
+              </tbody>
+      
+              <tbody>
+                <tr>
+                  <th scope="row" class="text-start">Bot-Protection</th>
+                  <td>&#10007</svg></td>
+                  <td>&#10007</svg></td>
+                  <td>&#10003</svg></td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-start">Presale Eligible</th>
+                  <td>&#10007</td>
+                  <td>&#10007</svg></td>
+                  <td>&#10003</svg></td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-start">Verified</th>
+                  <td>&#10003</td>
+                  <td>&#10003</svg></td>
+                  <td>&#10003</svg></td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-start">Source Code</th>
+                  <td>&#10003</td>
+                  <td>&#10003</td>
+                  <td>&#10003</svg></td>
+                </tr>
+              </tbody>
+            </table>
+    </section>
       <hr>
       </main>
 
-      <footer></footer>
+      <footer class="text-center">
+        Copyright &copy; <a href="#">BlockAB</a> | All rights reserved
+      
+      </footer>
 
     </div>
+    <script src="timer.js"></script>
+
+
+   <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/626a2c11b0d10b6f3e6fb6e7/1g1nbo9m7';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+  <!--End of Tawk.to Script-->
+
+  
 </body>
+
 </html>

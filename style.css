@@ -1,8 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 
-* {
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Tapestry&display=swap');
+
+html, body{
   margin: 0;
   padding: 0;
+ overflow-x: hidden;
+}
+
+
+* {
+margin: 0;
+padding: 0;
 }
 
 .container{
@@ -32,7 +43,9 @@
 }
 
 .section1{
-   min-height: 100vh;
+   min-height: 70vh;
+   margin-top: 20px;
+  
 }
 
 .section1 h1{
@@ -41,6 +54,14 @@
 
 .logo-title{
   font-size: 1.7rem;
+  font-family: 'Dancing Script', cursive;
+}
+
+.logo-span{
+  font-size: 1.2rem;
+  margin-left: 2px;
+  font-family: 'Tapestry', cursive;
+
 }
 
 .logo{
@@ -49,26 +70,47 @@
 }
 
 .eth-logo{
-  width: 125px;
+  width: 140px;
 }
 
 .topright .topimg-size{
-  width: 466;
+  margin-left: 230px;
+  
+
 }
 
 .section2{
-  padding-left:63px;
-  padding-right: 63;
+  padding-top: 40px;
+  padding-bottom: 72px;
+}
+
+.section2 p{
+  padding: 0 8vw;
+  text-align: center;
 }
 
 .section2 h1{
-  font-size: 2rem;
+  font-size: 2.3rem;
 }
 
 .box{
+  padding: 8px 0;
   margin: 12px 22px;
-  min-width: 33vw;
+  min-width: 20vw;
   border: 2px solid rgb(177, 171, 171);
+  text-align: center;
+  border-radius: 8px;
+}
+
+.box h2{
+
+font-size: 2rem;
+padding: 15px 0;
+
+}
+.highlighted{
+  font-size: 1.2rem;
+  font-weight: bolder;
 }
 
 .box ul{
@@ -77,3 +119,48 @@
 .box ul li{
   margin: 12px 2px;
 }
+
+.plan-table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section3 table{
+  width: 100%;
+  margin-bottom: 140px;
+  margin-top: 20px;
+  border-collapse: collapse;
+
+}
+.section3 table th{
+     width: 23vw;
+     border: 2px solid rgb(177, 171, 171);
+     
+     padding: 15px 0;
+}
+.section3 table td{ 
+     border-bottom: 2px solid rgb(177, 171, 171);
+     border-right: 2px solid rgb(177, 171, 171);
+}
+.section3 h1{
+  font-size: 2.3rem;
+}
+
+.section3{
+  padding-left: 63px;
+  padding-right: 63px;
+}
+
+footer{
+  padding: 23px;
+  
+}
+
+
+.deal{
+  font-size: 1.2rem;
+  font-weight: bolder;
+  margin: 12px 0;
+}
+
